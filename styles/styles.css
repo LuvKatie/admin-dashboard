@@ -2,6 +2,8 @@ html,
 body {
     padding: 0;
     margin: 0;
+    height: 100%;
+    width: 100%;
 }
 
 * {
@@ -10,25 +12,29 @@ body {
 
 #container {
     display: grid;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     padding: 0px;
     margin: 0px;
-    grid-template: 1.3fr 2fr 2fr 2fr / 1.2fr 2fr 2fr 1.2fr;
+    grid-template: 1.3fr 2fr 2fr 2fr / 1.2fr 2fr 2fr 1.5fr;
 }
 
 #sidebar-menu {
-    background-color: peachpuff;
+    background-color: #0ea5e9;
     grid-row: 1 / -1;
 }
 
 #header {
-    background-color: lightcyan;
+    position: relative;
+    z-index: 10;
+
+    background-color: white;
     grid-column: 2 / -1;
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 #main-content {
-    background-color: cornsilk;
+    background-color: #e5e7eb;
     grid-column: 2 / -1;
     grid-row: 2 / -1;
 }
