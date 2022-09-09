@@ -2,7 +2,7 @@
 
 A project built after just learning Grid ( CSS ) to create -
 
-an ' Admin Dashboard '
+an ' Admin Dashboard ' site with an emphasis on layout in Grid.
 
 Example:
 
