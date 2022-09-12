@@ -20,11 +20,15 @@ body {
 /* Sidebar menu content */
 #container {
     display: grid;
+
     height: 100%;
     width: 100%;
     padding: 0px;
     margin: 0px;
-    grid-template: 1.3fr 2fr 2fr 2fr / 1.2fr 2fr 2fr 1.5fr;
+
+    grid-template: 1.3fr 0.4fr 2fr 2fr 2fr 0.3fr / 1.2fr 2fr 2fr 1.5fr;
+
+    background-color: #e5e7eb;
 }
 
 #sidebar-menu {
@@ -207,8 +211,71 @@ input[type="button"]{
 
 /* Main content */
 
-#main-content {
+#main-cards {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1.2fr);
+    grid-column: 2 / 4;
+    grid-row: 3 / 6;
+
+    align-items: center;
+    justify-items: center;
+
     background-color: #e5e7eb;
-    grid-column: 2 / -1;
-    grid-row: 2 / -1;
+}
+
+#right-side-cards {
+    display: grid;
+    grid-template: 0.2fr 1fr 0.2fr 1fr / 1fr;
+    grid-column: 4 / -1;
+    grid-row: 2 / 6;
+
+    align-items: center;
+
+    background-color: #e5e7eb;
+}
+
+.main-card {
+    border-radius: 6px;
+
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1), inset 8px 0px #ffc227;
+    background-color: white;
+
+    width: 80%;
+    height: 85%;
+}
+
+.right-card {
+    border-radius: 6px;
+
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+
+    width: 63%;
+    height: 90%;
+}
+
+.rcard1-container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.right-p {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.right-p p {
+    margin: 0px;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    align-self: flex-end;
+}
+
+.right-p.p1 {
+    padding-bottom: 14px;
 }
